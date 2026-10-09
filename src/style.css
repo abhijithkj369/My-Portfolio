@@ -86,3 +86,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:0}
 .cap{position:absolute;left:3%;right:3%;bottom:3%;z-index:5;padding:.9em 1.4em;border-radius:16px;opacity:0;transition:opacity .3s;min-height:12%}.cap.on{opacity:1}.cap b{color:var(--cyan);font-size:.9em}.cap p{font-size:1.2em;margin-top:.2em;min-height:1.6em}
 .over{position:absolute;inset:0;z-index:6;display:grid;place-content:center;justify-items:center;text-align:center;gap:1em;background:rgba(0,18,25,.75);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .4s}.over.on{opacity:1;pointer-events:auto}
 #end{background:rgba(0,18,25,.5)}.over h3{font-size:2.6em;letter-spacing:-.03em;margin:0}.over p{color:var(--mute);max-width:30em}.over .cta{justify-content:center}
+/* ---- Featured project card ---- */
+.card.full{grid-column:1/-1}
+.split{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center}
+.tree{margin:0;padding:1.1em 1.3em;border-radius:14px;background:rgba(0,18,25,.55);border:1px solid rgba(255,255,255,.1);font:.9rem/1.7 ui-monospace,Menlo,Consolas,monospace;color:var(--mute);overflow-x:auto}
+.tree b{color:var(--cyan);font-weight:600}
+@media(max-width:800px){.split{grid-template-columns:1fr}}
